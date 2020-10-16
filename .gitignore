@@ -1,0 +1,12 @@
+# dependencies folder
+/node_modules
+
+# production folder and files created with `build`
+/out
+/build
+/.next
+/.next-export
+
+# misc files
+.DS_Store
+npm-debug.log*
