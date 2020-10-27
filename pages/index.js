@@ -13,10 +13,23 @@ const Component = () => (
       <title>React-Store | Home</title>
     </Head>
     <Row as='section' className={`${style.landing_image}`}>
-      <Col xs={5} as='img' src='images/icons/Logo.svg'/>
+      <Col xs={5} as='img' src='images/icons/Logo.svg' />
       <Col className='d-inline-block my-auto'>
         <h1 className={style.landing_title}>React-Store</h1>
-        <p>Other things here</p>
+        <p>
+          Your favorite Electronic E-commerce.
+          <br />
+          PC, headsets, and more, for almost free, forever, ever.
+          <br />
+          <br />
+          <small>
+            Omer Marquez - 2020. LTC.
+            <br />
+            Licensed under Apache License.
+            <br />
+            Created for showcase, not a real store, sorry :(
+          </small>
+        </p>
       </Col>
     </Row>
     <Row as='section'>
@@ -30,7 +43,7 @@ const Component = () => (
         <br />
         <Most_Bough />
       </Col>
-      <Col xs={{order: 'first', span: 12}} md={{order: 'last', span: 12}}>
+      <Col xs={{ order: 'first', span: 12 }} md={{ order: 'last', span: 12 }}>
         <hr />
         <br />
         <h2>Explore by categories</h2>
