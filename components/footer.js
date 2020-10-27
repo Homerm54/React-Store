@@ -1,11 +1,10 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-import style from 'styles/footer.module.css';
+import { Container } from 'react-bootstrap';
 
 export default function Footer(){
   return(
-  <footer className={`${style.container}`} role='button'>
+  <Container fluid as='footer' role='button' className='text-center bg-success py-1'>
     <FontAwesomeIcon icon='arrow-up' />&nbsp;&nbsp;&nbsp;&nbsp; Back to Top
-  </footer>
+  </Container>
   )
 }
