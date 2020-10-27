@@ -5,12 +5,15 @@ import {
   Nav, Navbar, Form, FormControl,
   Button, Badge, NavDropdown
 } from 'react-bootstrap';
-import style from 'styles/navbar.module.css';
+
+import urls from 'utils/urls';
 
 
-const LogIn = <Button bsPrefix='nav-link' onClick={()=>netlifyIdentity.open('login')}
-style={{border: 'none',
-  backgroundColor: 'inherit'}}>
+const LogIn = <Button bsPrefix='nav-link' onClick={() => netlifyIdentity.open('login')}
+  style={{
+    border: 'none',
+    backgroundColor: 'inherit'
+  }}>
   <FontAwesomeIcon icon='user' />
   &nbsp;&nbsp;
   Hello, Please Register!
@@ -26,29 +29,26 @@ const searchForm = (
 )
 
 const shoppingCart = <Nav.Link>
-  <span className='d-md-none'>Shhoping Cart &nbsp;&nbsp;</span>
+  <span className='d-md-none'>Shoping Cart &nbsp;&nbsp;</span>
   <FontAwesomeIcon icon='shopping-cart' />
   <Badge variant="info" className='d-inline-block mb-1 ml-2'>0</Badge>
 </Nav.Link>
 
 
 const Categories = (
-  <NavDropdown title="Categories" id="collasible-nav-dropdown">
-    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+  <NavDropdown title={<span className='d-inline-block mx-2'> <FontAwesomeIcon icon='tag' /> Categories</span>} id="collasible-nav-dropdown">
+    <NavDropdown.Item href={urls.accessories}>Accessories</NavDropdown.Item>
+    <NavDropdown.Item href={urls.computers}>Computers</NavDropdown.Item>
+    <NavDropdown.Item href={urls.networking}>Networking</NavDropdown.Item>
+    <NavDropdown.Item href={urls.gaming}>Gaming</NavDropdown.Item>
   </NavDropdown>
 );
 
 const Settings = (
-  <NavDropdown title="Settings" id="collasible-nav-dropdown-settings">
-    <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-    <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-    <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-    <NavDropdown.Divider />
-    <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+  <NavDropdown title={<span className='d-inline-block mx-2'> <FontAwesomeIcon icon='cog' /> Settings</span>} id="collasible-nav-dropdown-settings">
+    <NavDropdown.Item href={urls.account}>Account</NavDropdown.Item>
+    <NavDropdown.Item href={urls.about}>About</NavDropdown.Item>
+    <NavDropdown.Item href={urls.orders}>Orders</NavDropdown.Item>
   </NavDropdown>
 );
 
@@ -57,7 +57,7 @@ const Settings = (
  */
 function Custom_Navbar() {
 
-  useEffect(()=>{
+  useEffect(() => {
     netlifyIdentity.init()
   });
 
