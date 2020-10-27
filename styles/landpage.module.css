@@ -1,0 +1,23 @@
+.landing_image{
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+
+  background-attachment: fixed;
+  background-image: url('/images/MainImage.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(43, 39, 39);
+
+  color: whitesmoke;
+}
+
+.landing_title{
+  font-size: xx-large;
+}
+
+@media (min-width: 768px){
+  .landing_title{
+    font-size: 5rem;
+  }
+}

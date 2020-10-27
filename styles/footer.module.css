@@ -1,0 +1,9 @@
+.container{
+  width: 100%;
+  text-align: center;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  background-color: rgb(13, 25, 55);
+  font-size: small;
+  color: whitesmoke !important;
+}
