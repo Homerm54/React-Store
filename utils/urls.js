@@ -5,5 +5,6 @@ export default {
   gaming: '#',
   account: '#',
   about: '#',
-  orders: '#'
+  orders: '#',
+  billing: '#'
 }

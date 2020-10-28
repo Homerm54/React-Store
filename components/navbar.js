@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import netlifyIdentity from 'netlify-identity-widget';
 import {
-  Nav, Navbar, Form, FormControl,
+  Nav, Navbar, InputGroup, FormControl,
   Button, Badge, NavDropdown
 } from 'react-bootstrap';
 
@@ -20,12 +20,14 @@ const LogIn = <Button bsPrefix='nav-link' onClick={() => netlifyIdentity.open('l
   </Button>
 
 const searchForm = (
-  <Form inline>
+  <InputGroup className="mb-3">
     <FormControl readOnly type="text" placeholder="Search" className="mr-sm-2 w-auto" />
-    <Button variant="outline-dark" disabled>
-      <FontAwesomeIcon icon='search' />
-    </Button>
-  </Form>
+    <InputGroup.Append>
+      <Button variant="outline-dark" disabled>
+        <FontAwesomeIcon icon='search' />
+      </Button>
+    </InputGroup.Append>
+  </InputGroup>
 )
 
 const shoppingCart = <Nav.Link>
@@ -47,8 +49,9 @@ const Categories = (
 const Settings = (
   <NavDropdown title={<span className='d-inline-block mx-2'> <FontAwesomeIcon icon='cog' /> Settings</span>} id="collasible-nav-dropdown-settings">
     <NavDropdown.Item href={urls.account}>Account</NavDropdown.Item>
-    <NavDropdown.Item href={urls.about}>About</NavDropdown.Item>
+    <NavDropdown.Item href={urls.billing}>Billing Information</NavDropdown.Item>
     <NavDropdown.Item href={urls.orders}>Orders</NavDropdown.Item>
+    <NavDropdown.Item href={urls.about}>About</NavDropdown.Item>
   </NavDropdown>
 );
 

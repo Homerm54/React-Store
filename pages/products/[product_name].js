@@ -29,7 +29,7 @@ export default function ProductDescription() {
               Sold by: Me
             </li>
           </ul>
-          <Form inline>
+          <Form>
             <Form.Row>
               <Form.Group as={Col} controlId='quantity-selector' xs={6} md={4}>
                 <Form.Label>Quantity:</Form.Label>
