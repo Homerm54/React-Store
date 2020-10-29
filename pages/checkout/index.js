@@ -3,12 +3,12 @@ import { Container, Image, Row, Col, Button } from 'react-bootstrap';
 export default function Checkout() {
 
   return (
-    <Container className='my-2'>
+    <Container className='my-3'>
       <Row>
         <Col xs={5}>
           <Image className="" fluid src="images/holders/286x180.svg" alt="Generic placeholder" />
         </Col>
-        <Col xs={6}>
+        <Col xs={6} className='mt-1'>
           <h5>Produc Title</h5>
           <p>
             Price: 200000 $
@@ -16,7 +16,7 @@ export default function Checkout() {
             Quantity: 2
           </p>
         </Col>
-        <Col as='span' className='d-inline-block text-danger' role='button' xs={1}>
+        <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
           X
         </Col>
       </Row>
@@ -33,7 +33,7 @@ export default function Checkout() {
             Quantity: 2
           </p>
         </Col>
-        <Col as='span' className='d-inline-block text-danger' role='button' xs={1}>
+        <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
           X
         </Col>
       </Row>

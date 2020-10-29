@@ -44,7 +44,7 @@ export default function MyApp({ Component, pageProps }) {
 
       <Navbar />
       <Component {...pageProps} />
-      <Footer />
+      {/*<Footer />*/}
       <noscript>
         You need to enable JavaScript to run the features of this app.
       </noscript>
