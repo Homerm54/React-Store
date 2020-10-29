@@ -1,9 +1,10 @@
-import { Container, Image, Row, Col, Button, ListGroup } from 'react-bootstrap';
+import { Container, Row, Col, Image, Button, ListGroup } from 'react-bootstrap';
 
-export default function Checkout() {
+export default function Search() {
 
   return (
-    <Container className='my-3'>
+    <Container className='mt-4' as='section'>
+      <div className='h5 pb-4'>You searched for: {'search'}</div>
       <ListGroup as='ul'>
         <ListGroup.Item as='li' className='pr-2'>
           <Row>
@@ -14,10 +15,7 @@ export default function Checkout() {
               <h5 className='h6'>Product Title</h5>
               Price: 200000 $
               <br />
-              Quantity: 2
-            </Col>
-            <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
-              X
+              <Button href='#' size='sm' className='d-inline-block mt-1'>Check Out &rarr;</Button>
             </Col>
           </Row>
         </ListGroup.Item>
@@ -30,28 +28,11 @@ export default function Checkout() {
               <h5 className='h6'>Product Title</h5>
               Price: 200000 $
               <br />
-              Quantity: 2
-            </Col>
-            <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
-              X
+              <Button href='#' size='sm' className='d-inline-block mt-1'>Check Out &rarr;</Button>
             </Col>
           </Row>
         </ListGroup.Item>
       </ListGroup>
-      <hr />
-      <Row className='h5'>
-        <Col className='pt-2' xs='auto' md>
-          Total
-        </Col>
-        <Col className='pt-2 text-success' xs='auto' md>
-          2000000000 $
-        </Col>
-        <Col>
-          <Button variant='info px-2 px-md-3' md>
-            <span className='d-none d-md-inline'>Procede to </span>Checkout &rarr;
-          </Button>
-        </Col>
-      </Row>
     </Container>
   )
 }

@@ -20,7 +20,7 @@ const LogIn = <Button bsPrefix='nav-link' onClick={() => netlifyIdentity.open('l
   </Button>
 
 const searchForm = (
-  <InputGroup className="mb-3 w-auto">
+  <InputGroup className="mb-3 mb-md-0 w-auto">
     <FormControl readOnly type="text" placeholder="Search" className="mr-sm-2 w-auto" />
     <InputGroup.Append>
       <Button variant="outline-dark" disabled>

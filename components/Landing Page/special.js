@@ -6,12 +6,15 @@ export default function Special() {
       <Card>
         <Card.Img variant="top" src="images/holders/286x180.svg" />
         <Card.Body>
-          <Card.Title>Card title that wraps to a new line</Card.Title>
+          <Card.Title as='a' href='#' className='text-dark h5 d-inline-block mb-2'>Card title that wraps to a new line</Card.Title>
           <Card.Text>
             This is a longer card with supporting text below as a natural lead-in to
             additional content. This content is a little bit longer.
       </Card.Text>
         </Card.Body>
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
       </Card>
       <Card className="p-3">
         <blockquote className="blockquote mb-0 card-body">
@@ -29,7 +32,7 @@ export default function Special() {
       <Card>
         <Card.Img variant="top" src="images/holders/286x180.svg" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title as='a' href='#' className='text-dark h5 d-inline-block mb-2'>Card title</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to additional
         content.{' '}
@@ -42,27 +45,20 @@ export default function Special() {
       <Card bg="primary" text="white" className="text-center p-3">
         <div className="blockquote mb-0 card-body">
           <h2>Today's Special Products for you</h2>
-          <div className="blockquote-footer">
-            <small className="text-muted">
-              New Products Every week.
-        </small>
-          </div>
         </div>
       </Card>
-      <Card className="text-center">
+      <Card>
+        <Card.Img src="images/holders/286x180.svg" />
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title as='a' href='#' className='text-dark h5 d-inline-block mb-2'>Card title</Card.Title>
           <Card.Text>
             This card has supporting text below as a natural lead-in to additional
         content.{' '}
           </Card.Text>
-          <Card.Text>
-            <small className="text-muted">Last updated 3 mins ago</small>
-          </Card.Text>
         </Card.Body>
-      </Card>
-      <Card>
-        <Card.Img src="images/holders/286x180.svg" />
+        <Card.Footer>
+          <small className="text-muted">Last updated 3 mins ago</small>
+        </Card.Footer>
       </Card>
       <Card className="text-right">
         <blockquote className="blockquote mb-0 card-body">
