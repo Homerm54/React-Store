@@ -20,7 +20,7 @@ const LogIn = <Button bsPrefix='nav-link' onClick={() => netlifyIdentity.open('l
   </Button>
 
 const searchForm = (
-  <InputGroup className="mb-3">
+  <InputGroup className="mb-3 w-auto">
     <FormControl readOnly type="text" placeholder="Search" className="mr-sm-2 w-auto" />
     <InputGroup.Append>
       <Button variant="outline-dark" disabled>
@@ -70,7 +70,9 @@ function Custom_Navbar() {
         <img alt='Logo' title='Logo' src='/images/icons/Logo.svg' className='d-inline-block w-25 mr-1' />
         React-Store
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" /> {/*This is the Toggle Button*/}
+      <Navbar.Toggle aria-controls="basic-navbar-nav" style={{borderStyle: 'none'}}>
+        <FontAwesomeIcon icon='bars' />
+      </Navbar.Toggle> {/*This is the Toggle Button*/}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav as='nav' className="mr-auto">
           {/*Use Next.js 'link' here, as={link}*/}
