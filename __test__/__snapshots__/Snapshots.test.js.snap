@@ -1,0 +1,1327 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Snapshot of the whole site Categories 1`] = `
+<div
+  class="mt-3 container"
+>
+  <h1
+    class="h3"
+  >
+    Category: 
+    Some Category
+  </h1>
+  <ul
+    class="list-group"
+  >
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          <a
+            class="d-inline-block mt-1 btn btn-primary btn-sm"
+            href="#"
+            role="button"
+          >
+            Check Out →
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          <a
+            class="d-inline-block mt-1 btn btn-primary btn-sm"
+            href="#"
+            role="button"
+          >
+            Check Out →
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Snapshot of the whole site Checkout 1`] = `
+<div
+  class="my-3 container"
+>
+  <ul
+    class="list-group"
+  >
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          Quantity: 2
+        </div>
+        <span
+          class="d-inline-block text-danger pt-4 col-1"
+          role="button"
+        >
+          X
+        </span>
+      </div>
+    </li>
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          Quantity: 2
+        </div>
+        <span
+          class="d-inline-block text-danger pt-4 col-1"
+          role="button"
+        >
+          X
+        </span>
+      </div>
+    </li>
+  </ul>
+  <hr />
+  <div
+    class="h5 row"
+  >
+    <div
+      class="pt-2 col-md col-auto"
+    >
+      Total
+    </div>
+    <div
+      class="pt-2 text-success col-md col-auto"
+    >
+      2000000000 $
+    </div>
+    <div
+      class="col"
+    >
+      <button
+        class="btn btn-info px-2 px-md-3"
+        type="button"
+      >
+        <span
+          class="d-none d-md-inline"
+        >
+          Procede to 
+        </span>
+        Checkout →
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot of the whole site Landpage 1`] = `
+<div
+  class="container-fluid"
+>
+  <section
+    class="landing_image row"
+  >
+    <img
+      class="col-5"
+      src="images/icons/Logo.svg"
+    />
+    <div
+      class="d-inline-block my-auto col"
+    >
+      <h1
+        class="landing_title"
+      >
+        React-Store
+      </h1>
+      <p>
+        Your favorite Electronic E-commerce.
+        <br />
+        PC, headsets, and more, for almost free, forever, ever.
+        <br />
+        <br />
+        <small>
+          Omer Marquez - 2020. LTC.
+          <br />
+          Licensed under Apache License.
+          <br />
+          Created for showcase, not a real store, sorry :(
+        </small>
+      </p>
+    </div>
+  </section>
+  <section
+    class="row"
+  >
+    <div
+      class="col-md col-12"
+    >
+      <hr />
+      <br />
+      <div
+        class="card-columns"
+      >
+        <div
+          class="card"
+        >
+          <img
+            class="card-img-top"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title that wraps to a new line
+            </a>
+            <p
+              class="card-text"
+            >
+              This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="p-3 card"
+        >
+          <blockquote
+            class="blockquote mb-0 card-body"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+            <footer
+              class="blockquote-footer"
+            >
+              <small
+                class="text-muted"
+              >
+                Someone famous in 
+                <cite
+                  title="Source Title"
+                >
+                  Source Title
+                </cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div
+          class="card"
+        >
+          <img
+            class="card-img-top"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title
+            </a>
+            <p
+              class="card-text"
+            >
+              This card has supporting text below as a natural lead-in to additional content.
+               
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="text-center p-3 card bg-primary text-white"
+        >
+          <div
+            class="blockquote mb-0 card-body"
+          >
+            <h2>
+              Today's Special Products for you
+            </h2>
+          </div>
+        </div>
+        <div
+          class="card"
+        >
+          <img
+            class="card-img"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title
+            </a>
+            <p
+              class="card-text"
+            >
+              This card has supporting text below as a natural lead-in to additional content.
+               
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="text-right card"
+        >
+          <blockquote
+            class="blockquote mb-0 card-body"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+            <footer
+              class="blockquote-footer"
+            >
+              <small
+                class="text-muted"
+              >
+                Someone famous in 
+                <cite
+                  title="Source Title"
+                >
+                  Source Title
+                </cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-md col-12"
+    >
+      <hr />
+      <br />
+      <div
+        class="card-columns"
+      >
+        <div
+          class="card"
+        >
+          <img
+            class="card-img-top"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title that wraps to a new line
+            </a>
+            <p
+              class="card-text"
+            >
+              This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="p-3 card"
+        >
+          <blockquote
+            class="blockquote mb-0 card-body"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+            <footer
+              class="blockquote-footer"
+            >
+              <small
+                class="text-muted"
+              >
+                Someone famous in 
+                <cite
+                  title="Source Title"
+                >
+                  Source Title
+                </cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+        <div
+          class="card"
+        >
+          <img
+            class="card-img-top"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title
+            </a>
+            <p
+              class="card-text"
+            >
+              This card has supporting text below as a natural lead-in to additional content.
+               
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="text-center p-3 card bg-primary text-white"
+        >
+          <div
+            class="blockquote mb-0 card-body"
+          >
+            <h2>
+              Most Bought this Week!
+            </h2>
+          </div>
+        </div>
+        <div
+          class="card"
+        >
+          <img
+            class="card-img-top"
+            src="images/holders/286x180.svg"
+          />
+          <div
+            class="card-body"
+          >
+            <a
+              class="text-dark h5 d-inline-block mb-2 card-title"
+              href="#"
+            >
+              Card title that wraps to a new line
+            </a>
+            <p
+              class="card-text"
+            >
+              This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <small
+              class="text-muted"
+            >
+              Last updated 3 mins ago
+            </small>
+          </div>
+        </div>
+        <div
+          class="text-right card"
+        >
+          <blockquote
+            class="blockquote mb-0 card-body"
+          >
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+            </p>
+            <footer
+              class="blockquote-footer"
+            >
+              <small
+                class="text-muted"
+              >
+                Someone famous in 
+                <cite
+                  title="Source Title"
+                >
+                  Source Title
+                </cite>
+              </small>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+    <div
+      class="col-md-12 col-12 order-md-last order-first"
+    >
+      <hr />
+      <br />
+      <h2>
+        Explore by categories
+      </h2>
+      <div
+        class="card-group"
+      >
+        <div
+          class="py-3 m-2 card"
+          style="background-position: center; background-repeat: no-repeat; background-size: cover; color: black; background-color: white; background-image: url(images/Categories/Accesories.jpg);"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-title h5"
+            >
+              Accesories
+            </div>
+            <p
+              class="card-text"
+            >
+              Headsets, Keyboars, Keypads, Mouses.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <a
+              class="btn btn-info"
+              href="#"
+              role="button"
+            >
+              See More &gt;
+            </a>
+          </div>
+        </div>
+        <div
+          class="py-3 m-2 card"
+          style="background-position: center; background-repeat: no-repeat; background-size: cover; color: white; background-color: black; background-image: url(images/Categories/Laptops.jpg);"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-title h5"
+            >
+              Computers
+            </div>
+            <p
+              class="card-text"
+            >
+              Laptops, Desktop and More.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <a
+              class="btn btn-info"
+              href="#"
+              role="button"
+            >
+              See More &gt;
+            </a>
+          </div>
+        </div>
+        <div
+          class="py-3 m-2 card"
+          style="background-position: center; background-repeat: no-repeat; background-size: cover; color: white; background-color: black; background-image: url(images/Categories/Networking.jpg);"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-title h5"
+            >
+              Networking
+            </div>
+            <p
+              class="card-text"
+            >
+              Modems, Routers, IT Solutions.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <a
+              class="btn btn-info"
+              href="#"
+              role="button"
+            >
+              See More &gt;
+            </a>
+          </div>
+        </div>
+        <div
+          class="py-3 m-2 card"
+          style="background-position: center; background-repeat: no-repeat; background-size: cover; color: white; background-color: black; background-image: url(images/Categories/Gaming.jpg);"
+        >
+          <div
+            class="card-body"
+          >
+            <div
+              class="card-title h5"
+            >
+              Gaming
+            </div>
+            <p
+              class="card-text"
+            >
+              Consoles, PC Gaming and Video Cards.
+            </p>
+          </div>
+          <div
+            class="card-footer"
+          >
+            <a
+              class="btn btn-info"
+              href="#"
+              role="button"
+            >
+              See More &gt;
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Snapshot of the whole site Product_Description 1`] = `
+<div
+  class="mt-4 container"
+>
+  <section
+    class="justify-content-center row"
+  >
+    <div
+      class="mb-2 mb-md-0 pr-1 col-md-6 col-12"
+    >
+      <img
+        class="w-100 img-fluid"
+        src="/images/holders/286x180.svg"
+      />
+    </div>
+    <div
+      class="pl-0 ml-4 ml-md-0 justify-content-center col-md-2 col-12 row no-gutters"
+    >
+      <img
+        class="col-md-12 col-3"
+        src="/images/holders/286x180.svg"
+      />
+      <img
+        class="col-md-12 col-3"
+        src="/images/holders/286x180.svg"
+      />
+      <img
+        class="col-md-12 col-3"
+        src="/images/holders/286x180.svg"
+      />
+      <img
+        class="col-md-12 col-3"
+        src="/images/holders/286x180.svg"
+      />
+    </div>
+    <div
+      class="mt-3 mt-md-0 col row"
+    >
+      <h1
+        class="h3"
+      >
+        Product Name Here!
+      </h1>
+      <ul
+        class="ul-no-decoration pl-2"
+      >
+        <li
+          class="text-success"
+        >
+          Price: 200000000$
+        </li>
+        <li
+          class="text-info"
+        >
+          Available: 5
+        </li>
+        <li
+          class="text-muted"
+        >
+          Sold by: Me
+        </li>
+      </ul>
+      <form
+        class=""
+      >
+        <div
+          class="input-group"
+        >
+          <div
+            class="input-group-prepend"
+          >
+            <span
+              class="input-group-text"
+            >
+              #
+            </span>
+          </div>
+          <input
+            class="form-control"
+            max="5"
+            min="1"
+            step="1"
+            type="number"
+            value="1"
+          />
+          <div
+            class="input-group-append"
+          >
+            <button
+              class="btn btn-primary"
+              type="submit"
+            >
+              Add 
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-shopping-cart fa-w-18 "
+                data-icon="shopping-cart"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="btn btn-primary"
+              type="submit"
+            >
+              Checkout 
+              <svg
+                aria-hidden="true"
+                class="svg-inline--fa fa-credit-card fa-w-18 "
+                data-icon="credit-card"
+                data-prefix="fas"
+                focusable="false"
+                role="img"
+                viewBox="0 0 576 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <hr />
+  <section
+    class="my-3"
+  >
+    <h3
+      class="h5"
+    >
+      Related
+    </h3>
+    <div
+      class="card-deck"
+    >
+      <div
+        class="card"
+      >
+        <img
+          class="card-img-top"
+          src="/images/holders/286x180.svg"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Card title
+          </div>
+          <p
+            class="card-text"
+          >
+            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          </p>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <img
+          class="card-img-top"
+          src="/images/holders/286x180.svg"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Card title
+          </div>
+          <p
+            class="card-text"
+          >
+            This card has supporting text below as a natural lead-in to additional content.
+             
+          </p>
+        </div>
+      </div>
+      <div
+        class="card"
+      >
+        <img
+          class="card-img-top"
+          src="/images/holders/286x180.svg"
+        />
+        <div
+          class="card-body"
+        >
+          <div
+            class="card-title h5"
+          >
+            Card title
+          </div>
+          <p
+            class="card-text"
+          >
+            This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <hr />
+  <section>
+    <h3
+      class="h5"
+    >
+      Description
+    </h3>
+    <p>
+      LoremLoremLorem LoremLorem Lorem Lorem Lorem Lorem LoremLorem Lorem LoremLoremLorem Lorem  Lorem LoremLorem Lorem Lorem Lorem LoremLorem Lorem Lorem Lorem Loremv Lorem Lorem.
+    </p>
+  </section>
+</div>
+`;
+
+exports[`Snapshot of the whole site Search_Results 1`] = `
+<section
+  class="mt-4 container"
+>
+  <div
+    class="h5 pb-4"
+  >
+    You searched for: 
+    search
+  </div>
+  <ul
+    class="list-group"
+  >
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          <a
+            class="d-inline-block mt-1 btn btn-primary btn-sm"
+            href="#"
+            role="button"
+          >
+            Check Out →
+          </a>
+        </div>
+      </div>
+    </li>
+    <li
+      class="pr-2 list-group-item"
+    >
+      <div
+        class="row"
+      >
+        <div
+          class="px-1 col-md-3 col-5"
+        >
+          <img
+            alt="Generic placeholder"
+            class="pt-1 img-fluid"
+            src="images/holders/286x180.svg"
+          />
+        </div>
+        <div
+          class="mt-1 col-md-8 col-5"
+        >
+          <h5
+            class="h6"
+          >
+            Product Title
+          </h5>
+          Price: 200000 $
+          <br />
+          <a
+            class="d-inline-block mt-1 btn btn-primary btn-sm"
+            href="#"
+            role="button"
+          >
+            Check Out →
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`Snapshot of the whole site Settings 1`] = `
+<div
+  class="pt-2 container accordion"
+>
+  <button
+    class="border-bottom w-100 text-left btn btn-link"
+    type="button"
+  >
+    Account
+  </button>
+  <div
+    class="my-3 collapse show"
+  >
+    <div
+      class="container"
+    >
+      <h2>
+        Hello, username here.
+      </h2>
+      <form
+        class="pt-3"
+      >
+        <div
+          class="form-row"
+        >
+          <div
+            class="col-md-6 col-12"
+          >
+            <div
+              class="mb-3 input-group"
+            >
+              <div
+                class="input-group-prepend"
+              >
+                <span
+                  class="input-group-text"
+                >
+                  First Name
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Here"
+              />
+            </div>
+          </div>
+          <div
+            class="col-md-6 col-12"
+          >
+            <div
+              class="mb-3 input-group"
+            >
+              <div
+                class="input-group-prepend"
+              >
+                <span
+                  class="input-group-text"
+                >
+                  Last Name
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Here"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="pb-3 form-row"
+        >
+          <div
+            class="mb-1 input-group col-12"
+          >
+            <div
+              class="input-group-prepend"
+            >
+              <span
+                class="input-group-text"
+                id="basic-addon1"
+              >
+                @
+              </span>
+            </div>
+            <input
+              class="form-control"
+              placeholder="Email Here"
+              type="email"
+            />
+          </div>
+          <div
+            class="pt-0 btn-group btn-group-sm col-auto"
+            role="group"
+          >
+            <button
+              class="btn btn-outline-success"
+              type="button"
+            >
+              Edit
+            </button>
+            <button
+              class="btn btn-outline-danger"
+              type="button"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+        <div
+          class="mb-3 input-group"
+        >
+          <div
+            class="dropdown input-group-prepend"
+          >
+            <button
+              aria-expanded="false"
+              aria-haspopup="true"
+              class="dropdown-toggle btn btn-outline-secondary"
+              type="button"
+            >
+              Address
+            </button>
+          </div>
+          <select
+            class="form-control"
+          >
+            <option>
+              Some Country
+            </option>
+            <option>
+              Some Other Country
+            </option>
+          </select>
+        </div>
+        <div
+          class="form-check"
+        >
+          <input
+            class="form-check-input"
+            id="checkbox"
+            type="checkbox"
+          />
+          <label
+            class="form-check-label"
+            for="checkbox"
+            title=""
+          >
+            Billing Information Registered
+          </label>
+        </div>
+        <button
+          class="mt-3 btn btn-danger"
+          type="button"
+        >
+          Delete Account
+        </button>
+      </form>
+    </div>
+  </div>
+  <button
+    class="border-bottom w-100 text-left btn btn-link"
+    type="button"
+  >
+    Orders
+  </button>
+  <div
+    class="pl-2 my-3 collapse"
+  >
+    <h2>
+      Orders
+    </h2>
+    <div
+      class="table-responsive"
+    >
+      <table
+        class="table table-striped table-bordered table-hover"
+      >
+        <thead>
+          <tr>
+            <th>
+              #
+            </th>
+            <th>
+              Product Name
+            </th>
+            <th>
+              Order Date
+            </th>
+            <th>
+              Quantity
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1
+            </td>
+            <td>
+              Mark ppppppppppppppppp
+            </td>
+            <td>
+              Otto
+            </td>
+            <td>
+              1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              2
+            </td>
+            <td>
+              Jacob
+            </td>
+            <td>
+              Thornton
+            </td>
+            <td>
+              1
+            </td>
+          </tr>
+          <tr>
+            <td>
+              3
+            </td>
+            <td
+              colspan="2"
+            >
+              Larry the Bird
+            </td>
+            <td>
+              1
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <button
+    class="border-bottom w-100 text-left btn btn-link"
+    type="button"
+  >
+    Billing Information
+  </button>
+  <div
+    class="pl-2 my-3 collapse"
+  >
+    <h2>
+      Billing
+    </h2>
+  </div>
+  <button
+    class="border-bottom w-100 text-left btn btn-link"
+    type="button"
+  >
+    About
+  </button>
+  <div
+    class="pl-2 my-3 collapse"
+  >
+    <h2>
+      About
+    </h2>
+    <br />
+    <h4>
+      Credits
+    </h4>
+    <p>
+      To Freepick, or some page like that, for giving the icon, main image, and other bunch of icon stuff.
+    </p>
+    <p>
+      Besides that, Fontawesome provided som other good icons, takes to that.
+    </p>
+    <h4>
+      Discalimer
+    </h4>
+    <p>
+      This web site doesn't sold anything, payment is disabled, although the whole process is true, using Strip in the backend, aither problem contact me if wanted.
+    </p>
+    <p>
+      Another important point, email, address and all the personal information is stored in a database. Nevertheless, it is not sold to third parties, nether checked or used, just stored and used for this web site use.
+    </p>
+    <h4>
+      Contact
+    </h4>
+    <p>
+      Email: 
+      <a
+        href="mailto:omer.marquezt@gmail.com"
+      >
+        omer.marquezt@gmail.com
+      </a>
+      To write other stuff here
+    </p>
+  </div>
+</div>
+`;
