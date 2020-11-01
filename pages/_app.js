@@ -4,7 +4,6 @@ import Router from 'next/router';
 import NProgress from 'nprogress/nprogress';
 
 import Navbar from 'components/navbar';
-import Footer from 'components/footer';
 
 import 'utils/icons.lib.js';
 
@@ -14,6 +13,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'nprogress/nprogress.css';
 import 'styles/global.css'
 
+// Init of NProgress module, a loading bar on top of the browser, to show loafing animation betwee page loads.
 Router.onRouteChangeStart = () => {
   NProgress.start();
 };
@@ -26,6 +26,12 @@ Router.onRouteChangeError = () => {// Fallback
   NProgress.done();
 };
 
+/**
+ * 
+ * @param {ReactComponent} Component This is the component that will be rendered, aka, the page.
+ * @param {Object} pageProps A `{}` with the properties to render the Component.
+ * @returns {ReactComponent} The HTML form, with headers, CSS, JS and all the thing.
+ */
 export default function MyApp({ Component, pageProps }) {
 
   return (
@@ -42,9 +48,10 @@ export default function MyApp({ Component, pageProps }) {
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <Navbar />
+      <Navbar /> 
+      {/*Adding this here, means that the navbar will be persistance across pages, 
+      and will be rendered only once in the web site lifetime*/}
       <Component {...pageProps} />
-      {/*<Footer />*/}
       <noscript>
         You need to enable JavaScript to run the features of this app.
       </noscript>

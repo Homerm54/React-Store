@@ -1,6 +1,10 @@
 import { useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Link from 'next/link';
+
 import netlifyIdentity from 'netlify-identity-widget';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   Nav, Navbar, InputGroup, FormControl,
   Button, Badge, NavDropdown
@@ -39,24 +43,32 @@ const shoppingCart = <Nav.Link>
 
 const Categories = (
   <NavDropdown title={<span className='d-inline-block mx-2'> <FontAwesomeIcon icon='tag' /> Categories</span>} id="collasible-nav-dropdown">
-    <NavDropdown.Item href={urls.accessories}>Accessories</NavDropdown.Item>
-    <NavDropdown.Item href={urls.computers}>Computers</NavDropdown.Item>
-    <NavDropdown.Item href={urls.networking}>Networking</NavDropdown.Item>
-    <NavDropdown.Item href={urls.gaming}>Gaming</NavDropdown.Item>
+    <Link href={urls.accessories}><NavDropdown.Item as='a'>Accessories</NavDropdown.Item></Link>
+    <Link href={urls.computers}><NavDropdown.Item as='a'>Computers</NavDropdown.Item></Link>
+    <Link href={urls.networking}><NavDropdown.Item as='a'>Networking</NavDropdown.Item></Link>
+    <Link href={urls.gaming}><NavDropdown.Item as='a'>Gaming</NavDropdown.Item></Link>
   </NavDropdown>
 );
 
 const Settings = (
   <NavDropdown title={<span className='d-inline-block mx-2'> <FontAwesomeIcon icon='cog' /> Settings</span>} id="collasible-nav-dropdown-settings">
-    <NavDropdown.Item href={urls.account}>Account</NavDropdown.Item>
-    <NavDropdown.Item href={urls.billing}>Billing Information</NavDropdown.Item>
-    <NavDropdown.Item href={urls.orders}>Orders</NavDropdown.Item>
-    <NavDropdown.Item href={urls.about}>About</NavDropdown.Item>
+    <Link href={urls.account}><NavDropdown.Item as='a'>Account</NavDropdown.Item></Link>
+    <Link href={urls.billing}><NavDropdown.Item as='a'>Billing Information</NavDropdown.Item></Link>
+    <Link href={urls.orders}><NavDropdown.Item as='a'>Orders</NavDropdown.Item></Link>
+    <Link href={urls.about}><NavDropdown.Item as='a'>About</NavDropdown.Item></Link>
   </NavDropdown>
 );
 
 /**
- * @returns A Component, what else could it be?
+ * Cornerstone of the user's navegation, this Navbar holds all the widgets needed
+ * for the user to navigate throught the app. Settings, Shopping Cart, Search Box, Cetegories and the Home Button.
+ * 
+ * This component is rendered only once in the Web App lifetime. So is the center of the important components:
+ * * The Shopping Cart, which actually holds what the user has searched and added.
+ * * The Register System, that only needs to be init once
+ * * Other stuff, check the source code.
+ * 
+ * @returns {ReactComponentElement} The navbar, what else could it be?
  */
 function Custom_Navbar() {
 
@@ -75,7 +87,6 @@ function Custom_Navbar() {
       </Navbar.Toggle> {/*This is the Toggle Button*/}
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav as='nav' className="mr-auto">
-          {/*Use Next.js 'link' here, as={link}*/}
           {LogIn}
           <NavDropdown.Divider />
           {shoppingCart}

@@ -722,7 +722,7 @@ exports[`Snapshot of the whole site Product_Description 1`] = `
     >
       <img
         class="w-100 img-fluid"
-        src="/images/holders/286x180.svg"
+        src="images/holders/286x180.svg"
       />
     </div>
     <div
@@ -730,19 +730,19 @@ exports[`Snapshot of the whole site Product_Description 1`] = `
     >
       <img
         class="col-md-12 col-3"
-        src="/images/holders/286x180.svg"
+        src="images/holders/286x180.svg"
       />
       <img
         class="col-md-12 col-3"
-        src="/images/holders/286x180.svg"
+        src="images/holders/286x180.svg"
       />
       <img
         class="col-md-12 col-3"
-        src="/images/holders/286x180.svg"
+        src="images/holders/286x180.svg"
       />
       <img
         class="col-md-12 col-3"
-        src="/images/holders/286x180.svg"
+        src="images/holders/286x180.svg"
       />
     </div>
     <div
@@ -751,7 +751,7 @@ exports[`Snapshot of the whole site Product_Description 1`] = `
       <h1
         class="h3"
       >
-        Product Name Here!
+        Product Title
       </h1>
       <ul
         class="ul-no-decoration pl-2"
@@ -759,17 +759,18 @@ exports[`Snapshot of the whole site Product_Description 1`] = `
         <li
           class="text-success"
         >
-          Price: 200000000$
+          Price: 200000 $
         </li>
         <li
           class="text-info"
         >
-          Available: 5
+          Available: 
+          2
         </li>
         <li
           class="text-muted"
         >
-          Sold by: Me
+          Sold by: 
         </li>
       </ul>
       <form
@@ -934,7 +935,9 @@ exports[`Snapshot of the whole site Product_Description 1`] = `
       Description
     </h3>
     <p>
-      LoremLoremLorem LoremLorem Lorem Lorem Lorem Lorem LoremLorem Lorem LoremLoremLorem Lorem  Lorem LoremLorem Lorem Lorem Lorem LoremLorem Lorem Lorem Lorem Loremv Lorem Lorem.
+      LoremLoremLorem LoremLorem Lorem Lorem Lorem Lorem LoremLorem Lorem
+  LoremLoremLorem Lorem  Lorem LoremLorem Lorem Lorem
+  Lorem LoremLorem Lorem Lorem Lorem Loremv Lorem Lorem.
     </p>
   </section>
 </div>

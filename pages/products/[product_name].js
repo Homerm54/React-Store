@@ -1,38 +1,72 @@
+import { useState, useEffect } from 'react'
+
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
 import { Container, Image, Row, Col, Button, Form, InputGroup, Card, CardDeck } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import Loading from '@utils/loading_spinner';
+import NetworkRequestMockup from '@utils/NetworkRequestMockup';
+
+/**
+ * The is where a single component has a page on it's own, here, the user is able
+ * to review to product, add it to the card, or procede to checkout. Futhermore, it
+ * also makes recommendation for other products, base on the category of the product in view.
+ * 
+ * It's planned that the name of the product is passed in the URL, this is why the file
+ * have a [] in the name, this way, using Next.js, the page is expecting a name embedded in
+ * the URL.
+ * 
+ * Example:
+ * 
+ * <WEBSITE_URL>/products/the-best-product-made.
+ * Here, 'the-best-product-made' is the name passed to the HTML file.
+ */
 export default function ProductDescription() {
+
+  const [product, setProduct] = useState(false);
+  const { product_name } = useRouter().query
+
+  useEffect(()=>{
+    NetworkRequestMockup('Product').then(product => {
+      setProduct(product)
+    })
+  }, []);
+
+  if(!product) return <Loading />
+  
+  const { img_url, price, seller, quantity, name, description } = product;
   return (
     <Container className='mt-4'>
       <Head>
-        <title>To Do</title>
+        <title>React Store | { product_name }</title>
       </Head>
       <Row as='section' className='justify-content-center'>
         <Col xs={12} md={6} className='mb-2 mb-md-0 pr-1'>
-          <Image fluid src='/images/holders/286x180.svg' className='w-100'/>
+          <Image fluid src={img_url[0]} className='w-100'/>
         </Col>
         <Col as={Row} md={2} xs={12} noGutters className='pl-0 ml-4 ml-md-0 justify-content-center'>
-          <Col as={Image} src='/images/holders/286x180.svg' xs={3} md={12} />
-          <Col as={Image} src='/images/holders/286x180.svg' xs={3} md={12} />
-          <Col as={Image} src='/images/holders/286x180.svg' xs={3} md={12} />
-          <Col as={Image} src='/images/holders/286x180.svg' xs={3} md={12} />
+          <Col as={Image} src={img_url[1]} xs={3} md={12} />
+          <Col as={Image} src={img_url[2]} xs={3} md={12} />
+          <Col as={Image} src={img_url[3]} xs={3} md={12} />
+          <Col as={Image} src={img_url[4]} xs={3} md={12} />
         </Col>
         <Col as={Row /*Child and Flex container*/} className='mt-3 mt-md-0'>
-          <h1 className='h3'>Product Name Here!</h1>
+          <h1 className='h3'>{ name }</h1>
           <ul className='ul-no-decoration pl-2'>
             <li className='text-success'>
-              Price: 200000000$
+              {`Price: ${price} $`}
             </li>
             <li className='text-info'>
-              Available: 5
+              Available: { quantity }
             </li>
             <li className='text-muted'>
-              Sold by: Me
+              Sold by: { seller }
             </li>
           </ul>
           <Form>
-            <InputGroup className="">
+            <InputGroup>
               <InputGroup.Prepend>
                 <InputGroup.Text>#</InputGroup.Text>
               </InputGroup.Prepend>
@@ -86,9 +120,7 @@ export default function ProductDescription() {
       <section>
         <h3 className='h5'>Description</h3>
         <p>
-          LoremLoremLorem LoremLorem Lorem Lorem Lorem Lorem LoremLorem Lorem
-          LoremLoremLorem Lorem  Lorem LoremLorem Lorem Lorem
-          Lorem LoremLorem Lorem Lorem Lorem Loremv Lorem Lorem.
+          { description }
         </p>
       </section>
     </Container>

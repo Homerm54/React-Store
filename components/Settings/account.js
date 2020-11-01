@@ -13,7 +13,7 @@ export default function Account() {
               <InputGroup.Prepend>
                 <InputGroup.Text>First Name</InputGroup.Text>
               </InputGroup.Prepend>
-              <Form.Control placeHolder='Here' />
+              <Form.Control placeholder='Here' />
             </InputGroup>
           </Col>
           <Col xs={12} md={6}>
@@ -21,7 +21,7 @@ export default function Account() {
               <InputGroup.Prepend>
                 <InputGroup.Text>Last Name</InputGroup.Text>
               </InputGroup.Prepend>
-              <Form.Control placeHolder='Here' />
+              <Form.Control placeholder='Here' />
             </InputGroup>
           </Col>
         </Form.Row>
@@ -31,7 +31,7 @@ export default function Account() {
             <InputGroup.Prepend>
               <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
             </InputGroup.Prepend>
-            <Form.Control type='email' placeHolder='Email Here' />
+            <Form.Control type='email' placeholder='Email Here' />
           </InputGroup>
 
           <ButtonGroup size='sm' className='pt-0' as={Col} xs='auto'>

@@ -1,3 +1,7 @@
+
+/**
+ * @todo Make this crap formal
+ */
 export default function About() {
   return (
     <>

@@ -1,5 +1,12 @@
 import { Card, Button, CardColumns } from 'react-bootstrap';
 
+/**
+ * Check the most bought
+ * @todo Might be better to fusion the 2 components in one, just to call a
+ * different Netlify function to retrieve from DB the special/most bought.
+ * 
+ * Renders the same thing, just shift be property.
+ */
 export default function Special() {
   return (
     <CardColumns>

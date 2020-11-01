@@ -1,43 +1,37 @@
 import { Container, Image, Row, Col, Button, ListGroup } from 'react-bootstrap';
+import product_list_generator from '@utils/product_list_generator';
+
+
+const Products_Fetched_Mockup = [
+  {
+    name: 'Product Title',
+    price: 200000,
+    image_url: "images/holders/286x180.svg",
+    extra_component: <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>X</Col>,
+    quantity: 2
+  },
+  {
+    name: 'Product Title',
+    price: 200000,
+    image_url: "images/holders/286x180.svg",
+    extra_component: <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>X</Col>,
+    quantity: 2
+  }
+]
+
+/**
+ * When a user is ready to pay, this is the UI that will use to pay.
+ * Renders a list of products (obviusly, using the util function), an 
+ * a payment button, that will be attached to the Strip logic.
+ * 
+ * @returns {ReactComponentElement} The Payment UI.
+ */
 
 export default function Checkout() {
 
   return (
     <Container className='my-3'>
-      <ListGroup as='ul'>
-        <ListGroup.Item as='li' className='pr-2'>
-          <Row>
-            <Col xs={5} md={3} className='px-1'>
-              <Image className="pt-1" fluid src="images/holders/286x180.svg" alt="Generic placeholder" />
-            </Col>
-            <Col xs={5} md={8} className='mt-1'>
-              <h5 className='h6'>Product Title</h5>
-              Price: 200000 $
-              <br />
-              Quantity: 2
-            </Col>
-            <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
-              X
-            </Col>
-          </Row>
-        </ListGroup.Item>
-        <ListGroup.Item as='li' className='pr-2'>
-          <Row>
-            <Col xs={5} md={3} className='px-1'>
-              <Image className="pt-1" fluid src="images/holders/286x180.svg" alt="Generic placeholder" />
-            </Col>
-            <Col xs={5} md={8} className='mt-1'>
-              <h5 className='h6'>Product Title</h5>
-              Price: 200000 $
-              <br />
-              Quantity: 2
-            </Col>
-            <Col as='span' className='d-inline-block text-danger pt-4' role='button' xs={1}>
-              X
-            </Col>
-          </Row>
-        </ListGroup.Item>
-      </ListGroup>
+      {product_list_generator(Products_Fetched_Mockup)}
       <hr />
       <Row className='h5'>
         <Col className='pt-2' xs='auto' md>
@@ -47,7 +41,7 @@ export default function Checkout() {
           2000000000 $
         </Col>
         <Col>
-          <Button variant='info px-2 px-md-3' md>
+          <Button variant='info px-2 px-md-3'>
             <span className='d-none d-md-inline'>Procede to </span>Checkout &rarr;
           </Button>
         </Col>

@@ -1,5 +1,9 @@
 import { Card, Button, CardColumns } from 'react-bootstrap';
 
+/**
+ * @todo Make use of the all powered Product rendered functions
+ * @todo Documentation
+ */
 export default function MostBough() {
   return (
     <CardColumns>

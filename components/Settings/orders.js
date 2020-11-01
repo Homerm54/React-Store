@@ -1,5 +1,9 @@
 import { Container, Table } from 'react-bootstrap';
 
+/**
+ * Table with the things bought, not the searched.
+ * Needs to be made dynamically, display a loading meanwhile.
+ */
 export default function Orders() {
   return (
     <>
